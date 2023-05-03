@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <title>RedStore | Products</title>
 </head>
+
 <body>
   <header>
     <div class="container">
@@ -306,4 +308,19 @@
     </div>
   </footer>
 </body>
+
+<!-- JavaScript for toggle-menu -->
+<script>
+  let menuItems = document.getElementById("menuItems");
+  menuItems.style.maxHeight = "0px";
+
+  function menuToggle() {
+    if (menuItems.style.maxHeight == "0px") {
+      menuItems.style.maxHeight = "200px";
+    } else {
+      menuItems.style.maxHeight = "0px";
+    }
+  }
+</script>
+
 </html>
